@@ -1,0 +1,16 @@
+[
+  {
+    "id": 43491941798,
+    "name": "Coffee Mug",
+    "description": "A large coffee mug for your morning brew.",
+    "price": 15.99,
+    "quantity": 100
+  },
+  {
+    "id": 45872191,
+    "name": "Tea Cup",
+    "description": "Elegant porcelain tea cup.",
+    "price": 12.50,
+    "quantity": 200
+  }
+]
