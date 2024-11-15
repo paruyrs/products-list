@@ -13,6 +13,9 @@ coroutines = "1.7.3"
 securityCrypto = "1.0.0"
 koin-bom = "4.0.0"
 gson = "2.10.1"
+mockk = "1.13.13"
+coroutinesTest = "1.6.3"
+coreTesting = "2.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -20,6 +23,9 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+mockk = { group= "io.mockk", name= "mockk", version.ref= "mockk" }
+kotlinx-coroutines-test = { group= "org.jetbrains.kotlinx", name= "kotlinx-coroutines-test", version.ref= "coroutinesTest" }
+androidx-arch-core-testing = { group= "androidx.arch.core", name= "core-testing", version.ref= "coreTesting" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }

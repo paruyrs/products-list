@@ -38,6 +38,21 @@ android {
     buildFeatures {
         compose = true
     }
+
+    sourceSets {
+        getByName("main") {
+            java.srcDir("src/main/java")
+            res.srcDir("src/main/res")
+        }
+        getByName("test") {
+            java.srcDir("src/test/java")
+            resources.srcDir("src/test/resources")
+        }
+        getByName("androidTest") {
+            java.srcDir("src/androidTest/java")
+            resources.srcDir("src/androidTest/resources")
+        }
+    }
 }
 
 dependencies {
@@ -50,11 +65,18 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    // Unit Testing Libraries
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.androidx.arch.core.testing)
+
+
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
